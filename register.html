@@ -1,0 +1,26 @@
+<html>
+<body>
+<form method="post" action="check">
+{% csrf_token %}
+
+{{form.username.errors}}
+<label for="{{form.username.id_for_label}}"> Username :</label>
+{{form.username}}
+<br>
+{{forms.password.errors}}
+<label for="{{form.password.id_for_label}}"> Password :</label>
+{{form.password}}
+<br>
+{{form.email.errors}}{{form.email}}
+<br>
+{{forms.phone.errors}}
+<label for="{{form.phone.id_for_label}}"> Phone :</label>
+{{form.phone}}
+<br>
+
+<input type="submit" value="ok">
+<br>
+
+</form>
+</body>
+</html>
